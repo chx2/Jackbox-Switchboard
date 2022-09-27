@@ -4,7 +4,7 @@ const path = require("path");
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: path.resolve(__dirname, "./dist/"),
+  base: './',
   resolve: {
     alias: {
       '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
