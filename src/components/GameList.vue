@@ -1,5 +1,8 @@
 <script setup>
 const games = [331670, 397460, 434170, 610180, 774461, 1005300, 1211630, 1552350, 1850960]
+const useImage = ((url) => {
+  return new URL(`/src/assets/${url}`, import.meta.url).href;
+});
 </script>
 
 <template>
@@ -12,7 +15,7 @@ const games = [331670, 397460, 434170, 610180, 774461, 1005300, 1211630, 1552350
                 :href="`steam://rungameid/${game}`">
                 <img
                     class="expand-on-hover mw-100"
-                    :src="`src/assets/party_pack_${games.indexOf(game) + 1}.jpg`"
+                    :src="useImage(`party_pack_${games.indexOf(game) + 1}.jpg`)"
                     :alt="`Party Pack ${games.indexOf(game) + 1}`"
                 >
             </a>
