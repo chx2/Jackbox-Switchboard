@@ -1,5 +1,5 @@
 <script setup>
-const games = [331670, 397460, 434170, 610180, 774461, 1005300, 1211630, 1552350, 1850960]
+const games = [331670, 397460, 434170, 610180, 774461, 1005300, 1211630, 1552350, 1850960, 2216830]
 const useImage = ((url) => {
   return new URL(`/src/assets/${url}`, import.meta.url).href;
 });
